@@ -1,0 +1,112 @@
+/* Utilities  */
+:root {
+    --white: #ffffff;
+    --lightblue: #B4D0E7;
+    --black: #000000;
+    --blue: #0061FF;
+    --brown: #61082B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.debug {
+    border: 1px solid black;
+}
+.container_wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container_small {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.jumboflex {
+    align-items: flex-start;
+}
+.column_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.btn {
+    padding: 8px 14px;
+    cursor: pointer;
+    border: none;
+}
+.blue{ 
+    background-color: var(--blue);
+    color: white;
+}
+/* HEADER  */
+header {
+    width: 1920px;
+}
+.header_nav {
+    width: 100%;
+    height: 80px;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 20px;
+}
+.header_nav a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+}
+
+/* Hero section  */
+#jumbo {
+    width: 100%px;
+    background-color: var(--lightblue);
+    height:780px;
+}
+h1 {
+    color: var(--black);
+    font-size: 76px;
+    padding: 20px;
+}
+#jumbo .container_wide {
+    padding: 150px 0;
+}
+.jumbo_content_wrap {
+    padding: 30px;
+}
+.jumbo_content_left {
+    width: 30%;
+    height: 400px;
+}
+.jumbo_content_left p {
+    line-height: 1.5rem;
+}
+.jumbo_content_left i {
+    font-size: 50px;
+    padding: 20px;
+}
+.jumbo_content_right {
+    width: 70%;
+}
+.jumbo_content_right img {
+    width: 100%;
+}
+
+/* MAIN  */
+
