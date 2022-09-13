@@ -41,12 +41,17 @@ body {
     justify-content: space-between;
     align-items: flex-start;
 }
+.column_start {
+    justify-content: flex-start;
+    gap: 20px;
+}
 .flexwrap {
     flex-wrap: wrap;
 }
 .stretch_items {
     align-items: stretch;
 }
+
 
 .btn {
     padding: 8px 14px;
@@ -135,14 +140,15 @@ h2 {
     padding-right: 20px;
 }
 
-/* PLANS        DA FINIRE */
+/* PLANS*/
 .plans {
     padding: 20px 0;
 }
 .plans_column {
-    height: 950px;
+    height: 960px;
     border: 1px solid lightgray;
     flex-basis: calc((100% - 100px) / 3);
+    position: relative;
 }
 .column_head {
     display: block;
@@ -150,6 +156,53 @@ h2 {
     padding: 10px;
     font-size: 16px;
     border-bottom: 1px solid lightgray;
+}
+.white_rectangle {
+    background-color: white;
+    height: 20px;
+    width: 215px;
+    position: absolute;
+    bottom: 37%;
+    right: 0;
+}
+.white_square {
+    background-color: white;
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    bottom: 37%;
+    left: 0;
+}
+
+/* UPPER COLUMN  */
+.column_upper {
+    height: 550px;
+    padding: 30px;
+    border-bottom: 1px solid lightgray;
+}
+.column_upper span {
+    color: gray;
+    display: block;
+    padding: 10px 0;
+}
+
+.column_upper button {
+    align-self: stretch;
+    font-size: 16px;
+}
+.column_upper a {
+    color: var(--blue);
+}
+/* LOWER COLUMN  */
+.lower_column {
+    padding: 30px;
+    height: 340px;
+}
+.lower_column h4 {
+    font-size: 18px;
+}
+.lower_column i {
+    color: var(--blue);
 }
 
 /* ENTERPRISE */
