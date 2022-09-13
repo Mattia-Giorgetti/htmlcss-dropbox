@@ -44,6 +44,9 @@ body {
 .flexwrap {
     flex-wrap: wrap;
 }
+.stretch_items {
+    align-items: stretch;
+}
 
 .btn {
     padding: 8px 14px;
@@ -281,6 +284,40 @@ footer {
     height: 570px;
     background-color: var(--black);
     color: var(--white);
+    position: relative;
+}
+footer ul {
+    list-style: none;
+}
+.foot_list_wrap {
+    border-bottom: 1px solid white;
+    padding: 80px 0;
+    height: 450px;
+}
+.foot_list_wrap span {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.foot_list_wrap li {
+    padding: 10px 0;
+}
+.black_rectangle {
+    background-color: var(--black);
+    height: 50px;
+    width: 1420px;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+
+}
+.bottom_footer {
+    height: 120px;
+    line-height: 120px;
+    color: lightslategray;
+}
+.bottom_footer span {
+    padding-right: 5px;
 }
 
-    
+
