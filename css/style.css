@@ -293,6 +293,68 @@ h3 {
     display: block;
 }
 
+/* Section 5 */
+.flex_square {
+    display: flex;
+}
+#squares_section {
+    width: 100%;
+    /* min-height: 640px; */
+}
+
+.left_square_section {
+    width: 33vw;
+}
+.mid_square_section {
+    width: 33vw;
+    height: 33vw;
+}
+.right_square_section {
+    width: 33vw;
+}
+.inner_square {
+    width: calc(33vw/ 2);
+    height: calc(33vw / 2);
+}
+/* COLORI QUADRATI  */
+.green_sq {
+    background-color: #A2D39B;
+    border: 20px solid #D1E9CD;
+}
+.brown_sq {
+    background-color: #61082B;
+}
+.cyan_sq {
+    background-color: #0093CE;
+}
+.red_sq {
+    background-color: #FF1C1C;
+}
+.dark_red_sq {
+    background-color: #D5001F;
+}
+.blue_sq {
+    background-color: #0D2481;
+}
+.yellow_sq {
+    background-color: #FFD830;
+}
+.heavenly_sq {
+    background-color: var(--lightblue);
+}
+.mid_text {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Section 6  */
