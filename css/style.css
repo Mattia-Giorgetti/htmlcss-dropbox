@@ -16,6 +16,9 @@ body {
     background-color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .container_wide {
     max-width: 1200px;
@@ -57,15 +60,18 @@ body {
     cursor: pointer;
     border: none;
     font-size: 18px;
+    display: block;
 }
 .blue{ 
     background-color: var(--blue);
     color: white;
+    transition: background-color 0.4s;
 }
 .white{
     background-color: var(--white);
     color: gray;
     border: 1px solid gray;
+    transition: box-shadow 0.4s;
 }
 /* HEADER  */
 header {
@@ -115,6 +121,10 @@ h1 {
 .jumbo_content_left i {
     font-size: 50px;
     padding: 20px;
+}
+.jumbo_content_left a {
+    color: var(--black);
+    transition: transform 0.4s linear;
 }
 .jumbo_content_right {
     width: 70%;
@@ -192,6 +202,9 @@ h2 {
 .column_upper a {
     color: var(--blue);
 }
+.column_upper p {
+    /* text-indent: -10px; */
+}
 /* LOWER COLUMN  */
 .lower_column {
     padding: 30px;
@@ -203,6 +216,10 @@ h2 {
 .lower_column i {
     color: var(--blue);
 }
+.lower_column p {
+    /* text-indent: -10px; */
+}
+
 
 /* ENTERPRISE */
 .enterprise {
@@ -298,22 +315,24 @@ h3 {
 }
 #squares_section {
     width: 100%;
+    height: 33vw;
     background-color: #F5F5F5;
 }
 
 .left_square_section {
-    width: 33vw;
+    width: calc(100% / 3);
 }
 .mid_square_section {
-    max-width: 33vw;
-    height: 33vw;
+    width: calc(100% / 3);
 }
 .right_square_section {
-    max-width: 33vw;
+    width: calc(100% / 3);
 }
 .inner_square {
-    width: calc(33vw/ 2);
+    width: 50%;
     height: calc(33vw / 2);
+    line-height: calc(33vw / 2);
+    text-align: center;
 }
 /* COLORI QUADRATI  */
 .green_sq {
@@ -341,23 +360,27 @@ h3 {
 .heavenly_sq {
     background-color: var(--lightblue);
 }
-.mid_text {
-    width: 80%;
-    height: 180px;
-    border-bottom: 1px solid gray;
-    padding: 40px;
+.mid_content {
+    padding: 0 40px;
+    height: 33vw;
+    overflow-y: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
+.mid_sq_image {
+    border-bottom: 1px solid gray;
+    padding: 40px 0;
+}
+.mid_sq_image img {
+    width: 50%;
+}
+.mid_sq_text p {
+    padding: 45px 0;
+    line-height: 1.5rem;
+}
+.inner_square img {
+    width: 50%;
+    filter: invert(1);
+    vertical-align: middle;
+}
 
 /* Section 6  */
 
@@ -393,6 +416,7 @@ h3 {
 .faq_text {
     padding: 20px 0;
     min-height: 100px;
+    transition: background-color 0.2s linear;
 }
 
 /* Footer  */
@@ -422,7 +446,7 @@ footer ul {
 .black_rectangle {
     background-color: var(--black);
     height: 50px;
-    width: 1420px;
+    width: 1350px;
     position: absolute;
     bottom: 15%;
     right: 0;
@@ -437,4 +461,36 @@ footer ul {
     padding-right: 5px;
 }
 
+/* Effetti  */
 
+.blue:hover {
+    background-color: rgb(76, 121, 247);
+}
+.white:hover {
+    box-shadow: 2px 2px 8px lightgray;
+}
+.foot_list_wrap li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.trial_right button {
+    transition: transform 0.4s linear;
+}
+.trial_right button:hover {
+    transform: scale(1.05);
+    color: var(--blue);
+    box-shadow: none;
+    
+}
+#about_our_clients a:hover {
+    text-decoration-color: var(--lightblue);
+}
+.jumbo_content_left a:hover {
+    transform: translateY(-0.5rem);
+    color: var(--blue);
+}
+.faq_text:hover {
+    background-color: #eee9e2;
+    cursor: pointer;
+}
