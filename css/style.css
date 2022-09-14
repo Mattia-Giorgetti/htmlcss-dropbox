@@ -407,14 +407,17 @@ h3 {
 /* Section 7  */
 .faq_section {
     border-bottom: 1px solid black;
+    cursor: pointer;
 }
 .faq_section p {
     display: none;
+    padding: 20px 0;
+    line-height: 1.4rem;
+    color: gray;
 }
 .faq_text {
     padding: 20px 0;
     min-height: 100px;
-    transition: background-color 0.2s linear;
 }
 
 /* Footer  */
@@ -479,7 +482,6 @@ footer ul {
     transform: scale(1.05);
     color: var(--blue);
     box-shadow: none;
-    
 }
 #about_our_clients a:hover {
     text-decoration-color: var(--lightblue);
@@ -488,7 +490,22 @@ footer ul {
     transform: translateY(-0.5rem);
     color: var(--blue);
 }
-.faq_text:hover {
-    background-color: #eee9e2;
-    cursor: pointer;
+.faq_section:hover p {
+    display:block;
+}
+span.chev_down {
+    transition: transform 0.4s;
+}
+.faq_section:hover span.chev_down{
+    transform: rotate(180deg);
+}
+
+.nav_left a , .nav_right a {
+    transition: all 0.7s ;
+}
+.nav_left a:hover , .nav_right a:not(:last-child):hover {
+    background-color: #f1eee7;
+    padding: 27px;
+    border-radius: 5px;
+    color: var(--black);
 }
