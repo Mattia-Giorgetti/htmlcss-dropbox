@@ -287,6 +287,7 @@ h3 {
 }
 .card_box {
     width: calc((100% - 80px) / 3);
+    transition: all 0.7s;
 }
 .card_box img {
     width: 100%;
@@ -508,4 +509,11 @@ span.chev_down {
     padding: 27px;
     border-radius: 5px;
     color: var(--black);
+}
+
+.card_box:hover {
+    box-shadow: 2px 2px 8px 2px lightgray;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
