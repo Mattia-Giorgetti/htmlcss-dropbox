@@ -204,7 +204,8 @@ h2 {
     color: var(--blue);
 }
 .column_upper p {
-    /* text-indent: -10px; */
+    text-indent: -10px;
+    padding-left: 1.2em;
 }
 /* LOWER COLUMN  */
 .lower_column {
@@ -218,7 +219,8 @@ h2 {
     color: var(--blue);
 }
 .lower_column p {
-    /* text-indent: -10px; */
+    text-indent: -10px;
+    padding-left: 1.2em;
 }
 
 
